@@ -75,6 +75,7 @@ export class Gfs {
 
 	constructor(private readonly c: Client, public readonly gid: number) {
 		console.log("test");
+		
 		common.lock(this, "c")
 		common.lock(this, "gid")
 	}
